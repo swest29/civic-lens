@@ -12,6 +12,14 @@
   padding: 0;
 }
 
+img, video {
+  max-width: 100%;
+  display: block;
+}
+
+button, input {
+  font: inherit;
+}
 
 /* Root Variables */
 :root {
@@ -25,6 +33,53 @@
   --shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
   --transition: all 0.5s ease;
 }
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--watchdog-white);
+  color: var(--truth-text);
+  line-height: 1.6;
+}
+
+header {
+  background-color: var(--blue-bulletin);
+  color: white;
+  padding: 1.5rem 1rem;
+}
+
+header h1 {
+  font-family: var(--font-heading);
+  font-size: 2rem;
+}
+
+header p {
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+nav {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+nav a {
+  background: var(--news-flash);
+  color: white;
+  padding: 0.4rem 0.8rem;
+  font-size: 0.8rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 3px;
+  transition: var(--transition);
+}
+
+main {
+  padding: 2rem 1rem;
+  max-width: 1100px;
+  margin: auto;
+}
+
 
 /* Manual Light/Dark Mode Styles*/
 body.light-mode {
@@ -46,13 +101,70 @@ body.dark-mode {
 }
 
 /* ///ADD/// Skip Link Styles */
-
+.skip-link {
+  position: absolute;
+  top: -50px;
+  left: 1rem;
+  background: var(--news-flash);
+  color: white;
+  padding: 0.5rem 1rem;
+  z-index: 1000;
+  text-decoration: none;
+  border-radius: 3px;
+  }
+  
+  .skip-link:focus {
+  top: 1rem;
+  outline: 2px solid var(--blue-bulletin);
+  }
+  
 /* ///ADD/// Navigation Styles */
-
+header {
+  background: var(--blue-bulletin);
+  color: white;
+  padding: 1.5rem 1rem;
+  }
+  
+  header h1 {
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  }
+  
 /* ///ADD/// Global Layout Styles */
-
+main {
+  max-width: 1100px;
+  margin: auto;
+  padding: 2rem 1rem;
+  }
+  
+  section {
+  margin-bottom: 2rem;
+  }
+  
+  .grid {
+  display: grid;
+  gap: 1rem;
+  }
+  
 /* ///ADD/// Global Text Styles */
-
+h1, h2, h3, h4 {
+  font-family: var(--font-heading);
+  }
+  
+  h2 {
+  margin-bottom: 1rem;
+  }
+  
+  p {
+  font-size: 0.9rem;
+  }
+  
+  blockquote {
+  font-style: italic;
+  text-align: center;
+  margin-top: 1rem;
+  }
+  
 
 /* ///ADD/// medium styles 620px */
 

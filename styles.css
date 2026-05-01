@@ -59,6 +59,27 @@ body.dark-mode {
   top: 0;
 }
 /* ///ADD/// Navigation Styles */
+.mobile-nav .menu {
+  display: none;
+  list-style: none;
+}
+
+.menu-button {
+  cursor: pointer;
+}
+
+#menu-toggle:checked + .menu-button + .menu {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: inherit;
+}
 
 /* ///ADD/// Global Layout Styles */
 

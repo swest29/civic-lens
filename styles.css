@@ -166,18 +166,46 @@ button {
 }
 
 /* ///ADD/// medium styles 620px */
+@media (min-width: 620px) {
+  #breaking-news ~ h3:nth-of-type(-n+2) {
+    display: inline-block;
+    width: 48%;
+  }
+
+  #featured-articles ~ h3,
+  #featured-articles ~ h3 + p {
+    display: inline-block;
+    width: 48%;
+  }
+}
 
 
 /* ///ADD/// large styles 920px */
-
+@media (min-width: 920px) {
+  #featured-articles ~ h3,
+  #featured-articles ~ h3 + p {
+    width: 30%;
+  }
+}
 
 /* ///ADD/// x-large styles 1024px */
+@media (min-width: 1024px) {
+  main {
+    padding: 2rem 3rem;
+  }
+}
 
 
 /* ///ADD/// Interaction Queries for color scheme light and dark and motion preference */
-
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+  }
+}
 
 /* ///ADD///  Feature Query for :has() that checks if the #menu-toggle is checked */
 @supports (selector(:has(*))) {
-
+  body:has(#menu-toggle:checked) .menu {
+    display: block;
+  }
 }

@@ -107,7 +107,63 @@ main {
 
 
 /* ///ADD/// Global Text Styles */
+h2 {
+  font-family: var(--font-heading);
+  margin: 2rem 0 1rem;
+}
 
+h3 {
+  font-family: var(--font-heading);
+  margin-bottom: 0.3rem;
+}
+
+p {
+  margin-bottom: 0.8rem;
+}
+
+blockquote {
+  text-align: center;
+  font-style: italic;
+  margin: 1rem 0 2rem;
+}
+
+#breaking-news ~ h3:nth-of-type(-n+2),
+#breaking-news ~ h3:nth-of-type(-n+2) + p,
+#breaking-news ~ h3:nth-of-type(-n+2) + p + p {
+  background: var(--news-flash);
+  color: white;
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+  box-shadow: var(--shadow);
+}
+
+#breaking-news ~ h3:nth-of-type(-n+2) + p + p {
+  background: black;
+}
+
+#featured-articles ~ h3,
+#featured-articles ~ h3 + p {
+  background: #e6e6e6;
+  padding: 1rem;
+  margin: 0.5rem 0;
+  box-shadow: var(--shadow);
+}
+
+form {
+  background: var(--news-flash);
+  color: white;
+  padding: 1.5rem;
+  margin-top: 1rem;
+}
+
+button {
+  width: 100%;
+  margin-top: 1rem;
+  padding: 0.7rem;
+  background: var(--blue-bulletin);
+  color: white;
+  border: none;
+}
 
 /* ///ADD/// medium styles 620px */
 

@@ -1,10 +1,16 @@
-/* CSS by ///ADD/// YOUR NAME */
+/* CSS by Sarina West */
 
 /* Imported Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wdth,wght@0,18..144,87..112,300..900;1,18..144,87..112,300..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
 
 /* ///ADD/// CSS Reset */
-
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
 /* Root Variables */
 :root {
@@ -39,7 +45,19 @@ body.dark-mode {
 }
 
 /* ///ADD/// Skip Link Styles */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: var(--news-flash);
+  color: #fff;
+  padding: 0.5rem;
+  z-index: 100;
+}
 
+.skip-link:focus {
+  top: 0;
+}
 /* ///ADD/// Navigation Styles */
 
 /* ///ADD/// Global Layout Styles */

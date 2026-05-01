@@ -118,13 +118,47 @@ p {
 }
 
 /* ///ADD/// medium styles 620px */
+@media (min-width: 620px) {
+  main {
+    padding: 2rem;
+  }
 
+  .mobile-nav .menu {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .menu-button {
+    display: none;
+  }
+}
 
 /* ///ADD/// large styles 920px */
+@media (min-width: 920px) {
+  body {
+    max-width: 900px;
+    margin: 0 auto;
+  }
 
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+}
 
 /* ///ADD/// x-large styles 1024px */
+@media (min-width: 1024px) {
+  body {
+    max-width: 1100px;
+  }
 
+  section {
+    margin-bottom: 3rem;
+  }
+}
 
 /* ///ADD/// Interaction Queries for color scheme light and dark and motion preference */
 

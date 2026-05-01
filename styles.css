@@ -82,6 +82,18 @@ nav a {
 }
 
 /* ///ADD/// Global Layout Styles */
+body {
+  font-family: var(--font-body);
+  line-height: 1.6;
+}
+
+main {
+  padding: 1rem;
+}
+
+section {
+  margin-bottom: 2rem;
+}
 
 /* ///ADD/// Global Text Styles */
 

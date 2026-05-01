@@ -4,13 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wdth,wght@0,18..144,87..112,300..900;1,18..144,87..112,300..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
 
 /* ///ADD/// CSS Reset */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+
 
 /* Root Variables */
 :root {
@@ -45,138 +39,27 @@ body.dark-mode {
 }
 
 /* ///ADD/// Skip Link Styles */
-.skip-link {
-  position: absolute;
-  top: -40px;
-  left: 0;
-  background: var(--news-flash);
-  color: #fff;
-  padding: 0.5rem;
-  z-index: 100;
-}
 
-.skip-link:focus {
-  top: 0;
-}
 /* ///ADD/// Navigation Styles */
-.mobile-nav .menu {
-  display: none;
-  list-style: none;
-}
-
-.menu-button {
-  cursor: pointer;
-}
-
-#menu-toggle:checked + .menu-button + .menu {
-  display: block;
-}
-
-nav ul {
-  list-style: none;
-}
-
-nav a {
-  text-decoration: none;
-  color: inherit;
-}
 
 /* ///ADD/// Global Layout Styles */
-body {
-  font-family: var(--font-body);
-  line-height: 1.6;
-}
-
-main {
-  padding: 1rem;
-}
-
-section {
-  margin-bottom: 2rem;
-}
 
 /* ///ADD/// Global Text Styles */
-h1, h2, h3 {
-  font-family: var(--font-heading);
-  margin-bottom: 0.5rem;
-}
 
-h1 {
-  font-size: 2rem;
-}
-
-h2 {
-  font-size: 1.5rem;
-}
-
-h3 {
-  font-size: 1.2rem;
-}
-
-p {
-  margin-bottom: 1rem;
-}
 
 /* ///ADD/// medium styles 620px */
-@media (min-width: 620px) {
-  main {
-    padding: 2rem;
-  }
 
-  .mobile-nav .menu {
-    display: flex;
-    gap: 1rem;
-  }
-
-  .menu-button {
-    display: none;
-  }
-}
 
 /* ///ADD/// large styles 920px */
-@media (min-width: 920px) {
-  body {
-    max-width: 900px;
-    margin: 0 auto;
-  }
 
-  h1 {
-    font-size: 2.5rem;
-  }
-
-  h2 {
-    font-size: 1.8rem;
-  }
-}
 
 /* ///ADD/// x-large styles 1024px */
-@media (min-width: 1024px) {
-  body {
-    max-width: 1100px;
-  }
 
-  section {
-    margin-bottom: 3rem;
-  }
-}
 
 /* ///ADD/// Interaction Queries for color scheme light and dark and motion preference */
-@media (prefers-color-scheme: dark) {
-  body:not(.light-mode) {
-    background-color: var(--truth-text);
-    color: var(--watchdog-white);
-  }
-}
 
-@media (prefers-reduced-motion: reduce) {
-  * {
-    transition: none !important;
-  }
-}
 
 /* ///ADD///  Feature Query for :has() that checks if the #menu-toggle is checked */
 @supports (selector(:has(*))) {
-  .mobile-nav:has(#menu-toggle:checked) .menu {
-    display: block;
-  }
+
 }

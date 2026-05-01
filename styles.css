@@ -167,18 +167,60 @@ h1, h2, h3, h4 {
   
 
 /* ///ADD/// medium styles 620px */
+@media (min-width: 620px) {
+  .breaking-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 
+  .featured-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 
 /* ///ADD/// large styles 920px */
+@media (min-width: 920px) {
+  .featured-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
 
 
 /* ///ADD/// x-large styles 1024px */
+@media (min-width: 1024px) {
+  header {
+    padding: 2rem 3rem;
+  }
 
+  main {
+    padding: 2rem 3rem;
+  }
+}
 
 /* ///ADD/// Interaction Queries for color scheme light and dark and motion preference */
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: var(--watchdog-white);
+    color: var(--truth-text);
+  }
+}
 
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: var(--truth-text);
+    color: var(--watchdog-white);
+  }
 
+  @media (prefers-reduced-motion: reduce) {
+    * {
+      transition: none !important;
+      animation: none !important;
+    }
+  }
+  
 /* ///ADD///  Feature Query for :has() that checks if the #menu-toggle is checked */
 @supports (selector(:has(*))) {
-
-}
+  body:has(#theme-toggle:checked) {
+    background: var(--truth-text);
+    color: var(--watchdog-white);
+  }
+}}
